@@ -1,24 +1,28 @@
 ```
-     ___       ___           
- /\   |  |__| |__  |\ |  /\  
-/~~\  |  |  | |___ | \| /~~\
+_______  ______    _______  _______
+|   _   ||    _ |  |       ||       |
+|  |_|  ||   | ||  |    ___||  _____|
+|       ||   |_||_ |   |___ | |_____
+|       ||    __  ||    ___||_____  |
+|   _   ||   |  | ||   |___  _____| |
+|__| |__||___|  |_||_______||_______|
 
 ```
 
-Slush-Athena
+Slush-ares
 ============
 
-[![NPM](https://nodei.co/npm/slush-athena.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.com/package/slush-athena)
+[![NPM](https://nodei.co/npm/slush-ares.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.com/package/slush-ares)
 
-[![npm version](https://badge.fury.io/js/slush-athena.svg)](http://badge.fury.io/js/slush-athena)
-[![Dependency Status](https://david-dm.org/reaganthomas/slush-athena.svg)](https://david-dm.org/reaganthomas/slush-athena)
+[![npm version](https://badge.fury.io/js/slush-ares.svg)](http://badge.fury.io/js/slush-ares)
+[![Dependency Status](https://david-dm.org/prestonvanloon/slush-ares.svg)](https://david-dm.org/prestonvanloon/slush-ares)
 
-[![Pull Requests Status](http://issuestats.com/github/reaganthomas/slush-athena/badge/pr?style=flat)](http://issuestats.com/github/reaganthomas/slush-athena/badge/pr?style=flat)
-[![Issues Status](http://issuestats.com/github/reaganthomas/slush-athena/badge/issue?style=flat)](http://issuestats.com/github/reaganthomas/slush-athena/badge/issue?style=flat)
+[![Pull Requests Status](http://issuestats.com/github/prestonvanloon/slush-ares/badge/pr?style=flat)](http://issuestats.com/github/prestonvanloon/slush-ares/badge/pr?style=flat)
+[![Issues Status](http://issuestats.com/github/prestonvanloon/slush-ares/badge/issue?style=flat)](http://issuestats.com/github/prestonvanloon/slush-ares/badge/issue?style=flat)
 
 A Slush generator for APIs
 
-* [Slush-Athena](#slush-athena)
+* [Slush-ares](#slush-ares)
   * [Installation](#installation)
   * [Usage](#usage)
     * [Scaffold API](#scaffold)
@@ -36,7 +40,7 @@ $ npm install -g gulp slush
 Then install the generator:
 
 ```
-$ npm install -g slush-athena
+$ npm install -g slush-ares
 ```
 
 <h2 id="usage">Usage</h2>
@@ -52,7 +56,7 @@ $ cd new_project
 Scaffold your API:
 
 ```
-$ slush athena
+$ slush ares
 ```
 
 This will generate the following files:
@@ -90,7 +94,7 @@ This will generate the following files:
 │   ├── lint.js
 │   ├── move.js
 │   └── test.js
-├── .athenarc                        # Athena generator configuration
+├── .aresrc                        # ares generator configuration
 ├── .gitignore
 ├── .jshintrc
 ├── README.md
@@ -103,7 +107,7 @@ This will generate the following files:
 <h3 id="controller">Scaffold Controller</h3>
 
 ```
-$ slush athena:controller
+$ slush ares:controller
 ```
 
 Follow the prompts, and be sure to use a capitalcase name.
@@ -123,7 +127,7 @@ This will generate the following files:
 <h3 id="model">Scaffold Model</h3>
 
 ```
-$ slush athena:model
+$ slush ares:model
 ```
 
 Follow the prompts, and be sure to use a capitalcase name.

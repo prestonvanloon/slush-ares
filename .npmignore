@@ -5,3 +5,4 @@ temp
 
 # don't ignore .npmignore files
 !.npmignore
+!.gitignore
