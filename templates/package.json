@@ -1,7 +1,7 @@
 {
   "name": "<%= appNameSlug %>",
   "description": "<%= appDescription %>",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "server/app.js",
   "private": true,
   "dependencies": {
@@ -9,7 +9,6 @@
     "chalk": "^1.1.1",
     "compression": "^1.5.2",
     "deepmerge": "^0.2.10",
-    "ejs": "^2.3.4",
     "errorhandler": "^1.4.2",
     "express": "^4.13.3",
     "method-override": "^2.3.5",
