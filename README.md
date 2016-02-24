@@ -22,6 +22,8 @@ Slush-ares
 
 A Slush generator for APIs
 
+<sub>Forked from [slush-athena](https://github.com/reaganthomas/slush-athena).</sub>
+
 * [Slush-ares](#slush-ares)
   * [Installation](#installation)
   * [Usage](#usage)
