@@ -63,45 +63,33 @@ This will generate the following files:
 
 ```
 .
-├── server
-│   └── api
-│       └── index.js
-│   └── config
-│       └── environment              # Environment configuration
-│           ├── development.js
-│           ├── index.js
-│           ├── production.js
-│           ├── staging.js
-│           └── test.js
-│       └── seed                     # Seed data
-│           └── .gitkeep
-│       └── express.js               # Express configuration
-│   └── lib
-│       └── enums                    # Static objects
-│           ├── errors.js
-│           ├── index.js
-│       └── errorHandler             # Basic error handling
-│           ├── errorHandler.spec.js
-│           ├── index.js
-│           ├── invalidPayload.js
-│           ├── notFound.js
-│           └── serverError.js
-│   ├── app.js                       # Server bootstrap, config, and startup
-│   └── routes.js                    # Routing
-├── tasks                            # Modularized gulp tasks
-│   ├── apidoc.js
-│   ├── clean.js
-│   ├── lint.js
-│   ├── move.js
-│   └── test.js
-├── .aresrc                        # ares generator configuration
+├── .aresrc
 ├── .gitignore
 ├── .jshintrc
+├── .travis.yml
 ├── README.md
-├── build-config.js                  # Build configuration for gulp
+├── build-config.js
 ├── gulpfile.js
 ├── package.json
-└── server.js                        # For simple app execution
+├── server
+│   ├── api
+│   │   └── index.js
+│   ├── app.js
+│   ├── config
+│   │   ├── environment
+│   │   │   ├── development.js
+│   │   │   ├── index.js
+│   │   │   ├── production.js
+│   │   │   └── test.js
+│   │   ├── express.js
+│   │   └── seed
+│   │       └── .gitkeep
+│   ├── lib
+│   │   └── .gitkeep
+│   └── routes.js
+└── tasks
+    ├── lint.js
+    └── test.js
 ```
 
 <h3 id="controller">Scaffold Controller</h3>
