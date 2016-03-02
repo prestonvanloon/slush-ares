@@ -21,7 +21,7 @@
       return done('Project scaffolded without mongoose; cannot scaffold model.');
     }
 
-    answers.modelLower = answers.modelName.match(/[A-Z][a-z]+/g).join('-').toLowerCase();
+    answers.modelLower = answers.modelName.charAt(0).toLowerCase() + answers.modelName.slice(1);
 
     var gulpSrc = [__dirname + '/templates/**/*'];
 
