@@ -4,7 +4,7 @@
   const request = require('supertest');
   const chai = require('chai');
 
-  const app = require('../../app');
+  const app = require('../../../../app');
   const expect = chai.expect;
 
   describe('exampleMethod', function() {
