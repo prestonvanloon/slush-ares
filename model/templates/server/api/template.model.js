@@ -8,5 +8,9 @@
     // Insert model specifications here
   });
 
+  <%= modelName %>Schema.statics.generateMinimumModel = function() {
+    return {};
+  };
+
   module.exports = mongoose.model('<%= modelName %>', <%= modelName %>Schema);
 })();

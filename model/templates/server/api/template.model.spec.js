@@ -10,6 +10,11 @@
       <%= modelName %>.remove({}, done);
     });
 
+    describe('.generateMinimumModel', function() {
+      it('should be ok', function() {
+        return <%= modelName %>.create(<%= modelName %>.generateMinimumModel());
+      });
+    });
     // Insert model tests here
   });
 })();
