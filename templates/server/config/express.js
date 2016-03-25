@@ -18,11 +18,11 @@
     app.use(bodyParser.json());
     app.use(methodOverride());
 
+    const env = app.get('env');
+
     if(env !== 'test') {
       app.use(morgan('dev'));
     }
-
-    let env = app.get('env');
     
     /* istanbul ignore next */
     if(env === 'development' || env === 'test') {
