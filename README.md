@@ -100,7 +100,7 @@ This will generate the following files:
 $ slush ares:controller
 ```
 
-Follow the prompts, and be sure to use a capitalcase name.
+Follow the prompts, and be sure to use a capital case name.
 
 This will generate the following files:
 
@@ -120,7 +120,7 @@ This will generate the following files:
 $ slush ares:model
 ```
 
-Follow the prompts, and be sure to use a capitalcase name.
+Follow the prompts, and be sure to use a capital case name.
 
 This will generate the following files:
 
@@ -131,4 +131,39 @@ This will generate the following files:
 │       ├── <model-name>
 │           ├── <model-name>.model.js
 │           └── <model-name>.model.spec.js
+```
+
+<h3 id="crud">Scaffold CRUD</h3>
+
+```
+$ slush ares:crud
+```
+
+CRUD stands for Create Read Update Delete.
+
+Follow the prompts to generate CRUD endpoints for your model.
+
+```
+.
+├── server
+│   ├── api
+│   └── <model-name>
+│       ├── index.js
+│       ├── <model-name>.controller
+│       │   ├── createOrder
+│       │   │   ├── create<model-name>.spec.js
+│       │   │   └── index.js
+│       │   ├── delete<model-name>
+│       │   │   ├── delete<model-name>.spec.js
+│       │   │   └── index.js
+│       │   ├── get<model-name>
+│       │   │   ├── get<model-name>.spec.js
+│       │   │   └── index.js
+│       │   ├── index.js
+│       │   └── update<model-name>
+│       │       ├── index.js
+│       │       └── update<model-name>.spec.js
+│       ├── <model-name>.model.js
+│       └── <model-name>.model.spec.js
+
 ```
