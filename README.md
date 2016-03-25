@@ -30,6 +30,7 @@ A Slush generator for APIs
     * [Scaffold API](#scaffold)
     * [Scaffold Controller](#controller)
     * [Scaffold Model](#model)
+    * [Scaffold CRUD](#crud)
 
 <h2 id="installation">Installation</h2>
 
