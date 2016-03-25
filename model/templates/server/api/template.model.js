@@ -9,7 +9,9 @@
   });
 
   <%= modelName %>Schema.statics.generateMinimumModel = function() {
-    return {};
+    return {
+      _id: mongoose.Types.ObjectId()
+    };
   };
 
   module.exports = mongoose.model('<%= modelName %>', <%= modelName %>Schema);
