@@ -8,11 +8,7 @@
       validate: function(input) {
         var done = this.async();
 
-        if(/^([A-Z][a-z]+){1,3}$/.test(input)) {
-          done(true);
-        } else {
-          done('Controller name must be capital case, with a maximum of 3 words.');
-        }
+        done(true);
       }
     }, {
       type: 'confirm',

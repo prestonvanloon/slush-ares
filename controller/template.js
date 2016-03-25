@@ -16,11 +16,8 @@
       return done();
     }
 
-    var controllerWords = answers.controllerName.match(/[A-Z][a-z]+/g);
-    var controllerFirstLetter = answers.controllerName[0].toLowerCase();
-
-    answers.controllerLower = controllerWords.join('-').toLowerCase();
-    answers.controllerRoute = controllerFirstLetter + controllerWords.join('').slice(1);
+    answers.controllerLower = answers.controllerName;
+    answers.controllerRoute = answers.controllerName;
 
     var gulpSrc = [__dirname + '/templates/**/*'];
 
@@ -34,11 +31,14 @@
       });
 
     function addControllerDirToPath(path) {
-      if(path.basename === 'index' || path.basename.indexOf('controller') !== -1 || path.basename.indexOf('validator') !== -1) {
-        path.dirname += '/' + answers.controllerLower;
-        path.basename = path.basename.replace('_index', 'index');
-        path.basename = path.basename.replace('template', answers.controllerLower);
+      if(path.dirname.indexOf('/api') !== -1) {
+        path.dirname = path.dirname.replace('/api', '/api/' + answers.controllerLower);
       }
+
+      path.dirname = path.dirname.replace(new RegExp('Template', 'g'), answers.controllerLower);
+      path.dirname = path.dirname.replace(new RegExp('template', 'g'), answers.controllerLower);
+      path.basename = path.basename.replace(new RegExp('Template', 'g'), answers.controllerLower);
+      path.basename = path.basename.replace(new RegExp('template', 'g'), answers.controllerLower);
     }
   });
 
