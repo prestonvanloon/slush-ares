@@ -15,9 +15,9 @@
       return done();
     }
 
-    var aresarc = jsonfile.readFileSync('./.aresarc');
+    var aresrc = jsonfile.readFileSync('./.aresrc');
 
-    if(aresarc && !aresarc.mongoose) {
+    if(aresrc && !aresrc.mongoose) {
       return done('Project scaffolded without mongoose; cannot scaffold model.');
     }
 
