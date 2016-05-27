@@ -10,6 +10,7 @@
     "compression": "^1.5.2",
     "deepmerge": "^0.2.10",
     "errorhandler": "^1.4.2",
+    "error.handler": "~1.2.1",
     "express": "^4.13.3",
     "method-override": "^2.3.5",
     "mongoose": "^4.1.8",
